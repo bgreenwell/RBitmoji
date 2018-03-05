@@ -31,7 +31,10 @@ Basic (and I mean basic) usage
 ``` r
 library(RBitmoji)
 set.seed(101)  # for reproducibility
-plot_comic("8b06e67b-d4e9-4f11-a355-f1236df17079-v1", tag = "fail")
+plot_comic(
+  id = "8b06e67b-d4e9-4f11-a355-f1236df17079-v1",  # your unique user ID
+  tag = "fail"
+)
 ```
 
 <img src="tools/README-unnamed-chunk-2-1.png" style="display: block; margin: auto;" />
