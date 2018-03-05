@@ -13,6 +13,8 @@ Ya, this is happening...
 
 3.  Switch to using [`httr`](https://cran.r-project.org/package=httr) and [`jsonlite`](https://cran.r-project.org/package=jsonlite)
 
+4.  Use JSON file to look up `comic_id` via keyword tags
+
 Basic (and I mean basic) usage
 ------------------------------
 
