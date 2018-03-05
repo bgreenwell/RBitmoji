@@ -43,7 +43,7 @@ scatter.smooth(cars)
 rasterImage(img, 4, 70, 12, 120)
 ```
 
-<img src="tools/README-unnamed-chunk-1-1.png" style="display: block; margin: auto;" />
+<img src="tools/README-unnamed-chunk-1-1.png" width="100%" style="display: block; margin: auto;" />
 
 Inspirations
 ------------
