@@ -29,10 +29,18 @@ template_id <- "15401"  # not sure about this, yet
 comic_id <- "10228164"  # tags: explosion, boom, bad*$%
 user_id <- "128256895_1-s4-v1"  # blank male (Bitmoji version)
 extra <- "?transparent=1&palette=1&scale=1"  # not sure about this, yet
+url <- paste0(base, "/", comic_id, "-", user_id, ".png")
+
+# Setup for side-by-side plots
+par(mfrow = c(1, 2))
 
 # Plot Bitmoji
-img <- image_read(paste0(base, "/", comic_id, "-", user_id, ".png"))
+img <- image_read(url)
 plot(as.raster(img))
+
+# Overlay Bitmoji on another plot
+scatter.smooth(cars)
+rasterImage(img, 4, 70, 12, 120)
 ```
 
 <img src="tools/README-unnamed-chunk-1-1.png" style="display: block; margin: auto;" />
