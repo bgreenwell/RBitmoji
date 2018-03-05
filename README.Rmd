@@ -48,7 +48,7 @@ library(magick)
 # Construct URL
 base <- "https://render.bitstrips.com/v2/cpanel"  # base URL
 template_id <- "15401"  # not sure about this, yet
-comic_id <- "10228164"  # Edvard Munch's "The Scream"
+comic_id <- "10228164"  # tags: explosion, boom, bad*$%
 user_id <- "128256895_1-s1-v1"  # blank male
 extra <- "?transparent=1&palette=1"  # not sure about this, yet
 
