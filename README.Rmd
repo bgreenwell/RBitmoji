@@ -55,6 +55,7 @@ set.seed(101)  # for reproducibility
 user_id <- "8b06e67b-d4e9-4f11-a355-f1236df17079-v1"  # your (unique) user ID
 plot_comic(user_id, tag = "fail")
 
+# Some tags are associated with multiple comics
 par(mfrow = c(2, 2))
 for (i in 1:4) plot_comic(user_id, tag = "cool")
 ```

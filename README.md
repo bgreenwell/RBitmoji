@@ -39,6 +39,7 @@ plot_comic(user_id, tag = "fail")
 
 ``` r
 
+# Some tags are associated with multiple comics
 par(mfrow = c(2, 2))
 for (i in 1:4) plot_comic(user_id, tag = "cool")
 ```
