@@ -42,7 +42,7 @@ plot(as.raster(img))
 
 # Overlay Bitmoji on another plot
 scatter.smooth(cars)
-rasterImage(img, 4, 70, 12, 120)
+rasterImage(img, 4, 70, 10, 120)
 ```
 
 <img src="tools/README-unnamed-chunk-1-2.png" style="display: block; margin: auto;" />
