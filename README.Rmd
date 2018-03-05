@@ -30,7 +30,7 @@ Ya, this is happening...
 
 `r emo::ji("memo")` **TODO:**
 
-  1. Figure out how to incorporate (the apparently missing) background images
+  1. `r emo::ji("white_check_mark")` ~~Figure out how to incorporate (the apparently missing) background images~~
   
   2. Figure out a better way to determine your unique user ID
   

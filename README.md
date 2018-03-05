@@ -7,7 +7,7 @@ Ya, this is happening...
 
 📝 **TODO:**
 
-1.  Figure out how to incorporate (the apparently missing) background images
+1.  ✅ ~~Figure out how to incorporate (the apparently missing) background images~~
 
 2.  Figure out a better way to determine your unique user ID
 
