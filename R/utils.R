@@ -53,5 +53,7 @@ plot_comic <- function(id, tag) {
   comic_id <- get_comic_id(tag)
   base <- "https://render.bitstrips.com/v2/cpanel"  # base URL
   url <- paste0(base, "/", comic_id, "-", id, ".png")
+  usr <- par()
+  par(mar = c(0, 0, 0, 0) + 0.1)
   plot(as.raster(magick::image_read(url)))
 }
