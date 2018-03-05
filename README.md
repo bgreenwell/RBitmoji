@@ -15,8 +15,29 @@ Ya, this is happening...
 
 4.  Use JSON file to look up `comic_id` via keyword tags
 
+Installation
+------------
+
+You can (try to) install the development version of `RBitmoji` grom GitHub using
+
+``` r
+if (!requireNamespace("devtools")) install.packages("devtools")
+devtools::install_github("bgreenwell/RBitmoji")
+```
+
 Basic (and I mean basic) usage
 ------------------------------
+
+``` r
+library(RBitmoji)
+set.seed(105)  # for reproducibility
+plot_comic("8b06e67b-d4e9-4f11-a355-f1236df17079-v1", tag = "fml")
+```
+
+<img src="tools/README-unnamed-chunk-2-1.png" style="display: block; margin: auto;" />
+
+The basic idea
+--------------
 
 ``` r
 # Load required packages
@@ -39,7 +60,7 @@ img <- image_read(url)
 plot(as.raster(img))
 ```
 
-<img src="tools/README-unnamed-chunk-1-1.png" style="display: block; margin: auto;" />
+<img src="tools/README-unnamed-chunk-3-1.png" style="display: block; margin: auto;" />
 
 ``` r
 
@@ -48,7 +69,7 @@ scatter.smooth(cars)
 rasterImage(img, 5, 70, 10, 120)
 ```
 
-<img src="tools/README-unnamed-chunk-1-2.png" style="display: block; margin: auto;" />
+<img src="tools/README-unnamed-chunk-3-2.png" style="display: block; margin: auto;" />
 
 Inspirations
 ------------

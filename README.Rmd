@@ -38,7 +38,24 @@ Ya, this is happening...
   
   4. Use JSON file to look up `comic_id` via keyword tags
 
+
+## Installation
+
+You can (try to) install the development version of `RBitmoji` grom GitHub using
+```{r, eval=FALSE}
+if (!requireNamespace("devtools")) install.packages("devtools")
+devtools::install_github("bgreenwell/RBitmoji")
+```
+
 ## Basic (and I mean basic) usage
+
+```{r}
+library(RBitmoji)
+set.seed(105)  # for reproducibility
+plot_comic("8b06e67b-d4e9-4f11-a355-f1236df17079-v1", tag = "fml")
+```
+
+## The basic idea
 
 ```{r}
 # Load required packages
