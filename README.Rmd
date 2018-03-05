@@ -38,7 +38,7 @@ Ya, this is happening...
 
 ## Basic (and I mean basic) usage
 
-```{r, fig.width=6, fig.height=3, out.width="100%"}
+```{r, fig.width=10, fig.height=5, out.width="100%"}
 # Load required packages
 if (!requireNamespace("magick")) {
   install.packages("magick")
