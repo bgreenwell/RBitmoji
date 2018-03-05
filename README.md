@@ -24,13 +24,14 @@ if (!requireNamespace("magick")) {
 library(magick)
 
 # Construct URL
-base <- "https://render.bitstrips.com//render"  # base URL
-tag <- "10224100"  # Edvard Munch's "The Scream"
-user_id <- "8b06e67b-d4e9-4f11-a355-f1236df17079-v1"  # my user ID (I think)
+base <- "https://render.bitstrips.com/v2/cpanel"  # base URL
+template_id <- "15401"  # not sure about this, yet
+comic_id <- "10228164"  # Edvard Munch's "The Scream"
+user_id <- "128256895_1-s1-v1"  # blank male
 extra <- "?transparent=1&palette=1"  # not sure about this, yet
 
 # Plot Bitmoji
-img <- image_read(paste0(base, "/", tag, "/", user_id, ".png"))
+img <- image_read(paste0(base, "/", comic_id, "-", user_id, ".png"))
 plot(as.raster(img))
 ```
 
@@ -42,3 +43,5 @@ Inspirations
 -   <https://github.com/JoshCheek/bitmoji>
 
 -   <https://github.com/matthewnau/randmoji>
+
+-   <https://github.com/hadley/emo>
