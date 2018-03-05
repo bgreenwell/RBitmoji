@@ -59,7 +59,7 @@ plot(as.raster(img))
 
 # Overlay Bitmoji on another plot
 scatter.smooth(cars)
-rasterImage(img, 4, 70, 10, 120)
+rasterImage(img, 5, 70, 10, 120)
 ```
 
 ## Inspirations
