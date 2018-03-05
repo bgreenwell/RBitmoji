@@ -29,7 +29,8 @@ library(magick)
 base <- "https://render.bitstrips.com/v2/cpanel"  # base URL
 template_id <- "15401"  # not sure about this, yet
 comic_id <- "10228164"  # tags: explosion, boom, bad*$%
-user_id <- "128256895_1-s4-v1"  # blank male (Bitmoji version)
+# user_id <- "128256895_1-s4-v1"  # blank male (Bitmoji version)
+user_id <- "8b06e67b-d4e9-4f11-a355-f1236df17079-v1"  # my ID (I think?)
 extra <- "?transparent=1&palette=1&scale=1"  # not sure about this, yet
 url <- paste0(base, "/", comic_id, "-", user_id, ".png")
 
