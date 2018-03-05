@@ -31,13 +31,19 @@ Basic (and I mean basic) usage
 ``` r
 library(RBitmoji)
 set.seed(101)  # for reproducibility
-plot_comic(
-  id = "8b06e67b-d4e9-4f11-a355-f1236df17079-v1",  # your unique user ID
-  tag = "fail"
-)
+user_id <- "8b06e67b-d4e9-4f11-a355-f1236df17079-v1"  # your (unique) user ID
+plot_comic(user_id, tag = "fail")
 ```
 
 <img src="tools/README-unnamed-chunk-2-1.png" style="display: block; margin: auto;" />
+
+``` r
+
+par(mfrow = c(2, 2))
+for (i in 1:4) plot_comic(user_id, tag = "cool")
+```
+
+<img src="tools/README-unnamed-chunk-2-2.png" style="display: block; margin: auto;" />
 
 The basic idea
 --------------
