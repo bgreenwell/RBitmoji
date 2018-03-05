@@ -3,9 +3,9 @@ RBitmoji: An R wrapper to the overly complicated Bitmoji API <img src="https://r
 
 Ya, this is happening...
 
-**WARNING:** ⚠️ This package is under constuction and not very useable at the moment. Help getting it up and running is greatly appreciated, especially since Bitmoji's are critical to data science...
+⚠️ **WARNING:** This package is under constuction and not very useable at the moment. Help getting it up and running is greatly appreciated, especially since Bitmoji's are critical to data science...
 
-**TODO:**
+📝 **TODO:**
 
 1.  Figure out how to incorporate (the apparently missing) background images
 

@@ -26,9 +26,9 @@ knitr::opts_chunk$set(
 
 Ya, this is happening...
 
-**WARNING:** `r emo::ji("warning")` This package is under constuction and not very useable at the moment. Help getting it up and running is greatly appreciated, especially since Bitmoji's are critical to data science...
+`r emo::ji("warning")` **WARNING:** This package is under constuction and not very useable at the moment. Help getting it up and running is greatly appreciated, especially since Bitmoji's are critical to data science...
 
-**TODO:**
+`r emo::ji("memo")` **TODO:**
 
   1. Figure out how to incorporate (the apparently missing) background images
   
