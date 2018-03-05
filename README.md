@@ -39,12 +39,20 @@ plot_comic(user_id, tag = "fail")
 
 ``` r
 
+# Another example
+plot_comic(user_id, tag = "time magazine")
+```
+
+<img src="tools/README-unnamed-chunk-2-2.png" style="display: block; margin: auto;" />
+
+``` r
+
 # Some tags are associated with multiple comics
 par(mfrow = c(2, 2))
 for (i in 1:4) plot_comic(user_id, tag = "cool")
 ```
 
-<img src="tools/README-unnamed-chunk-2-2.png" style="display: block; margin: auto;" />
+<img src="tools/README-unnamed-chunk-2-3.png" style="display: block; margin: auto;" />
 
 The basic idea
 --------------
