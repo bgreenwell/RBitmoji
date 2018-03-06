@@ -11,7 +11,7 @@
 #' get_comic_ids("birthday")
 #' get_comic_ids("edvard munch")  # Edvard Munch's "The Scream"
 get_comic_ids <- function(tag) {
-  comics <- jsonlite::fromJSON("inst/json/comics.json")
+  # comics <- jsonlite::fromJSON("inst/json/comics.json")
   comics$imoji$comic_id[which(grepl(tag, comics$imoji$tags))]
 }
 
@@ -46,6 +46,8 @@ get_comic_id <- function(tag) {
 #'
 #' @param tag Character string specifying the keyword tag (e.g.,
 #' \code{"birthday"}).
+#'
+#' @export
 #'
 #' @examples
 #' plot_comic("8b06e67b-d4e9-4f11-a355-f1236df17079-v1", tag = "edvard")
