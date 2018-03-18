@@ -38,7 +38,28 @@ get_comic_id <- function(tag) {
 }
 
 
-#' Plot Bitmoji Comic
+#' Get Bitmoji comic
+#'
+#' Get a Bitmoji comic.
+#'
+#' @param id Character string specifying the users unique ID.
+#'
+#' @param tag Character string specifying the keyword tag (e.g.,
+#' \code{"birthday"}).
+#'
+#' @export
+#'
+#' @examples
+#' get_comic("8b06e67b-d4e9-4f11-a355-f1236df17079-v1", tag = "edvard")
+get_comic <- function(id, tag) {
+  comic_id <- get_comic_id(tag)
+  base <- "https://render.bitstrips.com/v2/cpanel"  # base URL
+  url <- paste0(base, "/", comic_id, "-", id, ".png")
+  magick::image_read(url)
+}
+
+
+#' Plot Bitmoji comic
 #'
 #' Plot a Bitmoji comic.
 #'
@@ -52,10 +73,8 @@ get_comic_id <- function(tag) {
 #' @examples
 #' plot_comic("8b06e67b-d4e9-4f11-a355-f1236df17079-v1", tag = "edvard")
 plot_comic <- function(id, tag) {
-  comic_id <- get_comic_id(tag)
-  base <- "https://render.bitstrips.com/v2/cpanel"  # base URL
-  url <- paste0(base, "/", comic_id, "-", id, ".png")
-  usr <- par()
+  img <- get_comic(id, tag)
+  # usr <- par()
   par(mar = c(0, 0, 0, 0) + 0.1)
-  plot(as.raster(magick::image_read(url)))
+  plot(as.raster(img))
 }
