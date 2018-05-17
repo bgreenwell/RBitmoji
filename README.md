@@ -1,24 +1,29 @@
 RBitmoji: An R wrapper to the overly complicated Bitmoji API <img src="tools/RBitmoji-logo.png" align="right" />
 ================================================================================================================
 
-Ya, this is happening...
+Ya, this is happening…
 
-⚠️ **WARNING:** This package is under construction and not very useful at the moment. Help getting it up and running is greatly appreciated, especially since Bitmoji's are critical to data science...
+⚠️ **WARNING:** This package is under construction and not very useful
+at the moment. Help getting it up and running is greatly appreciated,
+especially since Bitmoji’s are critical to data science…
 
 📝 **TODO:**
 
-1.  ✅ ~~Figure out how to incorporate (the apparently missing) background images~~
+1.  ✅ ~~Figure out how to incorporate (the apparently missing)
+    background images~~
 
 2.  Figure out a better way to determine your unique user ID
 
-3.  Switch to using [`httr`](https://cran.r-project.org/package=httr) ~~and [`jsonlite`](https://cran.r-project.org/package=jsonlite)~~
+3.  Switch to using [`httr`](https://cran.r-project.org/package=httr)
+    ~~and [`jsonlite`](https://cran.r-project.org/package=jsonlite)~~
 
 4.  Use JSON file to look up `comic_id` via keyword tags
 
 Installation
 ------------
 
-You can (try to) install the development version of `RBitmoji` grom GitHub using
+You can (try to) install the development version of `RBitmoji` grom
+GitHub using
 
 ``` r
 if (!requireNamespace("devtools")) install.packages("devtools")
