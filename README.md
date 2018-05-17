@@ -12,7 +12,7 @@ especially since Bitmoji’s are critical to data science…
 1.  ✅ ~~Figure out how to incorporate (the apparently missing)
     background images~~
 
-2.  Figure out a better way to determine your unique user ID
+2.  ✅ ~~Figure out a better way to determine your unique user ID~~
 
 3.  Switch to using [`httr`](https://cran.r-project.org/package=httr)
     ~~and [`jsonlite`](https://cran.r-project.org/package=jsonlite)~~
