@@ -7,8 +7,10 @@ Authors@R: person("Brandon", "Greenwell", email = "greenwell.brandon@gmail.com",
 Description: An R wrapper to the overly complicated Bitmoji API.
 License: GPL (>= 2)
 Imports:
+    getPass,
     graphics,
     grDevices,
+    httr,
     jsonlite,
     magick
 Encoding: UTF-8

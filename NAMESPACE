@@ -3,4 +3,5 @@
 export(get_comic)
 export(get_comic_id)
 export(get_comic_ids)
+export(get_id)
 export(plot_comic)
