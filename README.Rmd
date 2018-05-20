@@ -34,9 +34,11 @@ Ya, this is happening...
   
   2. `r emo::ji("white_check_mark")` ~~Figure out a better way to determine your unique user ID~~
   
-  3. Switch to using [`httr`](https://cran.r-project.org/package=httr) ~~and [`jsonlite`](https://cran.r-project.org/package=jsonlite)~~
+  3. `r emo::ji("white_check_mark")` ~~Switch to using [`httr`](https://cran.r-project.org/package=httr) and [`jsonlite`](https://cran.r-project.org/package=jsonlite)~~
   
-  4. Use JSON file to look up `comic_id` via keyword tags
+  4. `r emo::ji("white_check_mark")` ~~Use JSON file to look up `comic_id` via keyword tags~~
+  
+  5. Clean up package...
 
 
 ## Installation
