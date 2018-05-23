@@ -13,13 +13,15 @@ hex <- data.frame(x = 1.35 * 1 * c(-sqrt(3) / 2, 0, rep(sqrt(3) / 2, 2), 0,
                                    rep(-sqrt(3) / 2, 2)),
                   y = 1.35 * 1 * c(0.5, 1, 0.5, -0.5, -1, -0.5, 0.5))
 
+greys <- RColorBrewer::brewer.pal(9, "Greys")
+
 # Hexagon logo
 g <- ggplot() +
-  geom_polygon(data = hex, aes(x, y), color = "black",
-               fill = 'white', size = 4) +
+  geom_polygon(data = hex, aes(x, y), color = greys[7L],
+               fill = "white", size = 3) +
   annotation_custom(img, xmin = -Inf, xmax = Inf, ymin = -0.15, ymax = 1) +
-  annotate(geom = "text", x = 0, y = 0.65, color = "black", size = 8,
-           label = "RBitmoji") +
+  annotate(geom = "text", x = 0, y = 0.65, color = greys[7L], size = 8,
+           label = "RBitmoji", family = "Open Sans Light") +
   coord_equal(xlim = range(hex$x), ylim = range(hex$y)) +
   scale_x_continuous(expand = c(0.04, 0)) +
   scale_y_reverse(expand = c(0.04, 0)) +

@@ -1,7 +1,10 @@
-RBitmoji: An R wrapper to the overly complicated Bitmoji API <img src="tools/RBitmoji-logo.png" align="right" />
-================================================================================================================
+RBitmoji: An R wrapper to the overly complicated Bitmoji API <img src="tools/RBitmoji-logo.png" align="right" width="130" height="150" />
+=========================================================================================================================================
 
 Ya, this is happening…
+
+Overview
+--------
 
 ⚠️ **WARNING:** This package is under construction and not very useful
 at the moment. Help getting it up and running is greatly appreciated,
