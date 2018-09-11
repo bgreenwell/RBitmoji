@@ -1,0 +1,57 @@
+---
+title: "Real Data Science: An Introduction to the RBitmoji Package"
+author: "Brandon M. Greenwell"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+
+# Installation
+
+`RBitmoji` is not currently available on CRAN, but you can install the development version from GitHub:
+
+```{r eval=FALSE}
+if (!requireNamespace("devtools")) {
+  install.packages("devtools")
+}
+devtools::install_github("bgreenwell/RBitmoji")
+```
+
+**Note:** `RBitmoji` relies on the [`magick`](https://cran.r-project.org/package=magick) package, which requires an installation of [ImageMagick](http://www.imagemagick.org/script/index.php).
+
+
+# Example usage
+
+TBD.
+
+
+## Finding your Bitmoji ID
+
+In order to use `RBitmoji` you will need your unique Bitmoji ID, which can be difficult to find. Fortunately, the `get_id()` function can simplify the process! TO use this function, you must supply the email address associated with your Bitmoji account. You will then be prompted to enter your Bitmoji account password using a secure blah, blah, blah. For example:
+
+```{r get_id}
+library(RBitmoji)
+id <- get_id("greenwell.brandon@gmail.com")
+```
+
+If successful, your id will be stored in the variable `id`. Once that is done, you can use the `plot_comic()` function to do real data science.
+
+
+## Plotting comics
+
+The main function in `RBitmoji` is `plot_comic()`.
+
+```{r}
+plot_comic(id, tag = "time magazine")
+```

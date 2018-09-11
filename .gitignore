@@ -3,3 +3,4 @@
 .RData
 .html
 .DS_Store
+inst/doc
