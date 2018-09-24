@@ -2,6 +2,7 @@
 
 export(get_comic)
 export(get_comic_id)
-export(get_comic_ids)
+export(get_friends_comic_ids)
 export(get_id)
+export(get_imoji_comic_ids)
 export(plot_comic)

@@ -11,8 +11,8 @@
 #'
 #' @examples
 #' \dontrun{
-#' id <- get_id("username@@gmail.com")
-#' plot_comic(id, tag = "edvard")
+#' my_id <- get_id("username@@gmail.com")
+#' plot_comic(ny_id, tag = "edvard")
 #' }
 get_id <- function(user_email) {
 
@@ -42,7 +42,7 @@ get_id <- function(user_email) {
     encode = "form"
   )
 
-  # If log in not successful login, stop and provide message
+  # If log in not successful, stop and provide message
   if(login_response$status_code != 200) {
     if("message" %in% names(httr::content(login_response))) {
       stop(httr::content(login_response)$message)

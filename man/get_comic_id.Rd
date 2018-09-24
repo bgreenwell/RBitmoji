@@ -4,16 +4,20 @@
 \alias{get_comic_id}
 \title{Get comic ID from tag}
 \usage{
-get_comic_id(tag)
+get_comic_id(tag, friends = FALSE)
 }
 \arguments{
 \item{tag}{Character string specifying the keyword tag (e.g.,
 \code{"birthday"}).}
+
+\item{friends}{Logical indicating whether or not to find a friends comic.
+Default is \code{FALSE}.}
 }
 \description{
 Use a JSON file to look up a comic ID associated with a given tag.
 }
 \examples{
 get_comic_id("birthday")
+get_comic_id("birthday", friends = TRUE)
 get_comic_id("edvard")  # Edvard Munch's "The Scream"
 }

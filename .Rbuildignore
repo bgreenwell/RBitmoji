@@ -1,2 +1,7 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^\.travis\.yml$
+^README\.Rmd$
+^README\.html$
+^data-raw$
+^appveyor\.yml$

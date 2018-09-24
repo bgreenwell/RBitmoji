@@ -31,27 +31,32 @@ devtools::install_github("bgreenwell/RBitmoji")
 **Note:** `RBitmoji` relies on the [`magick`](https://cran.r-project.org/package=magick) package, which requires an installation of [ImageMagick](http://www.imagemagick.org/script/index.php).
 
 
-# Example usage
-
-TBD.
-
-
 ## Finding your Bitmoji ID
 
 In order to use `RBitmoji` you will need your unique Bitmoji ID, which can be difficult to find. Fortunately, the `get_id()` function can simplify the process! TO use this function, you must supply the email address associated with your Bitmoji account. You will then be prompted to enter your Bitmoji account password using a secure blah, blah, blah. For example:
 
-```{r get_id}
+```{r get_id-01, eval=FALSE}
 library(RBitmoji)
-id <- get_id("greenwell.brandon@gmail.com")
+my_id <- get_id("greenwell.brandon@gmail.com")
 ```
 
-If successful, your id will be stored in the variable `id`. Once that is done, you can use the `plot_comic()` function to do real data science.
+```{r get_my_id-02, echo=FALSE}
+library(RBitmoji)
+my_id <- "1551b314-5e8a-4477-aca2-088c05963111-v1"
+```
+
+
+If successful, your id will be stored in the variable `my_id`. Once that is done, you can use the `plot_comic()` function to do real data science.
 
 
 ## Plotting comics
 
 The main function in `RBitmoji` is `plot_comic()`.
 
-```{r}
-plot_comic(id, tag = "time magazine")
+```{r plot_comic}
+# Plot a single comic
+plot_comic(my_id, tag = "time magazine")
+
+# Plot a comic with a friend
+plot_comic(c(my_id, my_id), tag = "sloth")
 ```

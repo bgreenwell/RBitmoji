@@ -1,7 +1,7 @@
 ---
 output:
   md_document:
-    variant: markdown_github
+    variant: gfm
 ---
 
 ---
@@ -27,21 +27,15 @@ knitr::opts_chunk$set(
 Ya, this is happening...
 
 
-## Overview 
+## Update
 
-`r emo::ji("warning")` **WARNING:** This package is under construction and not very useful at the moment. Help getting it up and running is greatly appreciated, especially since Bitmoji's are critical to data science...
+You can now plot with friends!
 
-`r emo::ji("memo")` **TODO:**
-
-  1. `r emo::ji("white_check_mark")` ~~Figure out how to incorporate (the apparently missing) background images~~
-  
-  2. `r emo::ji("white_check_mark")` ~~Figure out a better way to determine your unique user ID~~
-  
-  3. `r emo::ji("white_check_mark")` ~~Switch to using [`httr`](https://cran.r-project.org/package=httr) and [`jsonlite`](https://cran.r-project.org/package=jsonlite)~~
-  
-  4. `r emo::ji("white_check_mark")` ~~Use JSON file to look up `comic_id` via keyword tags~~
-  
-  5. Clean up package...
+```{r}
+# Use get_id() to find your unique user ID
+my_id <- "1551b314-5e8a-4477-aca2-088c05963111-v1"
+RBitmoji::plot_comic(c(my_id, my_id), tag = "boom")
+```
 
 
 ## Installation

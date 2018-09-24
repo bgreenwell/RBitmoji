@@ -1,32 +1,20 @@
-RBitmoji: An R wrapper to the overly complicated Bitmoji API <img src="tools/RBitmoji-logo.png" align="right" width="130" height="150" />
-=========================================================================================================================================
+# RBitmoji: An R wrapper to the overly complicated Bitmoji API <img src="tools/RBitmoji-logo.png" align="right" width="130" height="150" />
 
 Ya, this is happening…
 
-Overview
---------
+## Update
 
-⚠️ **WARNING:** This package is under construction and not very useful
-at the moment. Help getting it up and running is greatly appreciated,
-especially since Bitmoji’s are critical to data science…
+You can now plot with friends\!
 
-📝 **TODO:**
+``` r
+# Use get_id() to find your unique user ID
+my_id <- "1551b314-5e8a-4477-aca2-088c05963111-v1"
+RBitmoji::plot_comic(c(my_id, my_id), tag = "boom")
+```
 
-1.  ✅ ~~Figure out how to incorporate (the apparently missing)
-    background images~~
+<img src="tools/README-unnamed-chunk-1-1.png" style="display: block; margin: auto;" />
 
-2.  ✅ ~~Figure out a better way to determine your unique user ID~~
-
-3.  ✅ ~~Switch to using
-    [`httr`](https://cran.r-project.org/package=httr) and
-    [`jsonlite`](https://cran.r-project.org/package=jsonlite)~~
-
-4.  ✅ ~~Use JSON file to look up `comic_id` via keyword tags~~
-
-5.  Clean up package…
-
-Installation
-------------
+## Installation
 
 You can (try to) install the development version of `RBitmoji` grom
 GitHub using
@@ -36,8 +24,7 @@ if (!requireNamespace("devtools")) install.packages("devtools")
 devtools::install_github("bgreenwell/RBitmoji")
 ```
 
-Basic (and I mean basic) usage
-------------------------------
+## Basic (and I mean basic) usage
 
 ``` r
 library(RBitmoji)
@@ -46,7 +33,7 @@ user_id <- "8b06e67b-d4e9-4f11-a355-f1236df17079-v1"  # your (unique) user ID
 plot_comic(user_id, tag = "fail")
 ```
 
-<img src="tools/README-unnamed-chunk-2-1.png" style="display: block; margin: auto;" />
+<img src="tools/README-unnamed-chunk-3-1.png" style="display: block; margin: auto;" />
 
 ``` r
 
@@ -54,7 +41,7 @@ plot_comic(user_id, tag = "fail")
 plot_comic(user_id, tag = "time magazine")
 ```
 
-<img src="tools/README-unnamed-chunk-2-2.png" style="display: block; margin: auto;" />
+<img src="tools/README-unnamed-chunk-3-2.png" style="display: block; margin: auto;" />
 
 ``` r
 
@@ -63,10 +50,9 @@ par(mfrow = c(2, 2))
 for (i in 1:4) plot_comic(user_id, tag = "cool")
 ```
 
-<img src="tools/README-unnamed-chunk-2-3.png" style="display: block; margin: auto;" />
+<img src="tools/README-unnamed-chunk-3-3.png" style="display: block; margin: auto;" />
 
-The basic idea
---------------
+## The basic idea
 
 ``` r
 # Load required packages
@@ -89,7 +75,7 @@ img <- image_read(url)
 plot(as.raster(img))
 ```
 
-<img src="tools/README-unnamed-chunk-3-1.png" style="display: block; margin: auto;" />
+<img src="tools/README-unnamed-chunk-4-1.png" style="display: block; margin: auto;" />
 
 ``` r
 
@@ -98,13 +84,12 @@ scatter.smooth(cars)
 rasterImage(img, 5, 70, 10, 120)
 ```
 
-<img src="tools/README-unnamed-chunk-3-2.png" style="display: block; margin: auto;" />
+<img src="tools/README-unnamed-chunk-4-2.png" style="display: block; margin: auto;" />
 
-Inspirations
-------------
+## Inspirations
 
--   <https://github.com/JoshCheek/bitmoji>
+  - <https://github.com/JoshCheek/bitmoji>
 
--   <https://github.com/matthewnau/randmoji>
+  - <https://github.com/matthewnau/randmoji>
 
--   <https://github.com/hadley/emo>
+  - <https://github.com/hadley/emo>
