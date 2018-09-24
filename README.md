@@ -1,5 +1,10 @@
 # RBitmoji: An R wrapper to the overly complicated Bitmoji API <img src="tools/RBitmoji-logo.png" align="right" width="130" height="150" />
 
+[![Travis-CI Build
+Status](https://travis-ci.org/bgreenwell/RBitmoji.svg?branch=master)](https://travis-ci.org/bgreenwell/RBitmoji)
+[![AppVeyor Build
+Status](https://ci.appveyor.com/api/projects/status/github/bgreenwell/RBitmoji?branch=master&svg=true)](https://ci.appveyor.com/project/bgreenwell/RBitmoji)
+
 Ya, this is happening…
 
 ## Update
