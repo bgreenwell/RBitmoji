@@ -7,21 +7,9 @@ Status](https://ci.appveyor.com/api/projects/status/github/bgreenwell/RBitmoji?b
 
 Ya, this is happening…
 
-## Update
-
-You can now plot with friends\!
-
-``` r
-# Use get_id() to find your unique user ID
-my_id <- "1551b314-5e8a-4477-aca2-088c05963111-v1"
-RBitmoji::plot_comic(c(my_id, my_id), tag = "boom")
-```
-
-<img src="tools/README-unnamed-chunk-1-1.png" style="display: block; margin: auto;" />
-
 ## Installation
 
-You can (try to) install the development version of `RBitmoji` grom
+You can (try to) install the development version of `RBitmoji` from
 GitHub using
 
 ``` r
@@ -49,16 +37,25 @@ If successful, your id will be stored in the variable `my_id`. Once that
 is done, you can use the `plot_comic()` function to do real data
 science.
 
-## Basic (and I mean basic) usage
+## Basic usage
+
+If you are familiar with Bitmoji, then you know that there are hundreds
+of comics available for your avatar, each of which is associated with a
+comic id and a tag. As of right now, you can only look up and plot
+comics by tag, but in the future, we’ll add an id argument as well.
+Also, note that many comics are associated with multiple tags and vice
+versa, so use `set.seed()` for reproducibility. Below are some simple
+examples (the value of `my_id` was found using the `get_id()`
+function).
 
 ``` r
-# Some tags correspond to multiple comics, so use set.seed()
+# Use set.seed() to generate the same comic everytime for a particular tag
 set.seed(101)  # for reproducibility
 my_id <- "1551b314-5e8a-4477-aca2-088c05963111-v1"
 plot_comic(my_id, tag = "fail")
 ```
 
-<img src="tools/README-unnamed-chunk-3-1.png" style="display: block; margin: auto;" />
+<img src="tools/README-examples-1.png" width="70%" style="display: block; margin: auto;" />
 
 ``` r
 
@@ -66,16 +63,38 @@ plot_comic(my_id, tag = "fail")
 plot_comic(my_id, tag = "time magazine")
 ```
 
-<img src="tools/README-unnamed-chunk-3-2.png" style="display: block; margin: auto;" />
+<img src="tools/README-examples-2.png" width="70%" style="display: block; margin: auto;" />
 
 ``` r
 
 # Some tags are associated with multiple comics
 par(mfrow = c(2, 2))
 for (i in 1:4) plot_comic(my_id, tag = "cool")
+
+# Overlay comics on various plots
+comic <- get_comic(my_id, tag = "volcano")
+library(ggplot2)
 ```
 
-<img src="tools/README-unnamed-chunk-3-3.png" style="display: block; margin: auto;" />
+<img src="tools/README-examples-3.png" width="70%" style="display: block; margin: auto;" />
+
+``` r
+ggplot(iris, aes(x = Petal.Length, y = Petal.Width)) +
+  geom_point(aes(color = Species)) +
+  annotation_raster(comic, xmin = 1, xmax = 3, ymin = 1.5, ymax = 2.5)
+```
+
+<img src="tools/README-examples-4.png" width="70%" style="display: block; margin: auto;" />
+
+``` r
+
+# You have two ids, you can also plot comics with friends
+set.seed(102)  # for reproducibility
+plot_comic(c(my_id, my_id), tag = "vomit")
+plot_comic(c(my_id, my_id), tag = "drink")
+```
+
+<img src="tools/README-examples-5.png" width="70%" style="display: block; margin: auto;" />
 
 ## Inspirations
 

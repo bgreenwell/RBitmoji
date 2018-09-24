@@ -1,11 +1,15 @@
 Package: RBitmoji
 Type: Package
-Title: An R Wrapper to the Overly Complicated Bitmoji API
-Version: 0.0.1.9000
+Title: An R Wrapper to the Overly Complicated 'Bitmoji' API
+Version: 0.0.2
 Authors@R: person("Brandon", "Greenwell", email = "greenwell.brandon@gmail.com",
-  role = c("aut", "cre"))
-Description: An R wrapper to the overly complicated Bitmoji API.
+  role = c("aut", "cre"), comment = c(ORCID = "0000-0002-8120-0084"))
+Description: An R wrapper to the overly complicated 'Bitmoji' API allowing users 
+  to access and plot various comic strips using their personalized 'Bitstrips'
+  avatar.
 License: GPL (>= 2)
+URL: https://github.com/bgreenwell/RBitmoji
+BugReports: https://github.com/bgreenwell/RBitmoji/issues
 Depends: R (>= 2.10)
 Imports:
     getPass,
