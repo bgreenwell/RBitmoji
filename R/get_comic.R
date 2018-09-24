@@ -28,5 +28,6 @@ get_comic <- function(id, tag) {
     }
   }
   url <- paste0(base, "/", comic_id, "-", id, ".png")
-  magick::image_read(url)
+  # magick::image_read(url)
+  png::readPNG(RCurl::getURLContent(url))
 }

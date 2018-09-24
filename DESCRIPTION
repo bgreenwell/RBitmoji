@@ -13,7 +13,8 @@ Imports:
     grDevices,
     httr,
     jsonlite,
-    magick
+    png,
+    RCurl
 Suggests: 
     knitr,
     rmarkdown
