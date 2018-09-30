@@ -1,5 +1,6 @@
 # RBitmoji: An R wrapper to the overly complicated Bitmoji API <img src="tools/RBitmoji-logo.png" align="right" width="130" height="150" />
 
+[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/RBitmoji)](https://cran.r-project.org/package=RBitmoji)
 [![Travis-CI Build
 Status](https://travis-ci.org/bgreenwell/RBitmoji.svg?branch=master)](https://travis-ci.org/bgreenwell/RBitmoji)
 [![AppVeyor Build

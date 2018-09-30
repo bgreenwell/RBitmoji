@@ -18,6 +18,6 @@ Get unique user id for use with \code{\link{plot_comic}} and
 \examples{
 \dontrun{
 my_id <- get_id("username@gmail.com")
-plot_comic(ny_id, tag = "edvard")
+plot_comic(my_id, tag = "edvard")
 }
 }
