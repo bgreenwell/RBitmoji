@@ -6,7 +6,7 @@ Authors@R: person("Brandon", "Greenwell", email = "greenwell.brandon@gmail.com",
   role = c("aut", "cre"), comment = c(ORCID = "0000-0002-8120-0084"))
 Description: An R wrapper to the overly complicated 'Bitmoji' API allowing users 
   to access and plot various comic strips using their personalized 'Bitstrips'
-  avatar.
+  avatar (<https://www.bitmoji.com/>).
 License: GPL (>= 2)
 URL: https://github.com/bgreenwell/RBitmoji
 BugReports: https://github.com/bgreenwell/RBitmoji/issues
