@@ -12,7 +12,7 @@
 #' @examples
 #' \dontrun{
 #' my_id <- get_id("username@@gmail.com")
-#' plot_comic(ny_id, tag = "edvard")
+#' plot_comic(my_id, tag = "edvard")
 #' }
 get_id <- function(user_email) {
 
