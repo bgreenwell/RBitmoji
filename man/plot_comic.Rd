@@ -4,7 +4,7 @@
 \alias{plot_comic}
 \title{Plot Bitmoji comic}
 \usage{
-plot_comic(id, tag)
+plot_comic(id, tag = NULL, comic_id = NULL)
 }
 \arguments{
 \item{id}{Character string specifying the users unique ID. Can also be a
@@ -12,6 +12,8 @@ vector of length 2.}
 
 \item{tag}{Character string specifying the keyword tag (e.g.,
 \code{"birthday"}).}
+
+\item{comic_id}{Character string specifying the commic id (e.g., \code{"10228108"})}
 }
 \description{
 Plot a Bitmoji comic.
