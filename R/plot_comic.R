@@ -8,6 +8,8 @@
 #' @param tag Character string specifying the keyword tag (e.g.,
 #' \code{"birthday"}).
 #'
+#' @param comic_id Character string specifying the commic id (e.g., \code{"10228108"})
+#'
 #' @export
 #'
 #' @examples
@@ -17,8 +19,8 @@
 #'
 #' # Plot with friends
 #' plot_comic(c(my_id, my_id), tag = "sloth")
-plot_comic <- function(id, tag) {
-  img <- get_comic(id, tag)
+plot_comic <- function(id, tag = NULL, comic_id = NULL) {
+  img <- get_comic(id, tag, comic_id)
   # usr <- par()
   graphics::par(mar = c(0, 0, 0, 0) + 0.1)
   graphics::plot(grDevices::as.raster(img))
