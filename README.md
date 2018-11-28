@@ -73,7 +73,7 @@ par(mfrow = c(2, 2))
 for (i in 1:4) plot_comic(my_id, tag = "cool")
 
 # Overlay comics on various plots
-comic <- get_comic(my_id, tag = "volcano")
+comic <- get_comic(my_id, tag = "volcano", transparent = TRUE)
 library(ggplot2)
 ```
 

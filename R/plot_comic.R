@@ -25,7 +25,8 @@
 #' # Plot with friends
 #' plot_comic(c(my_id, my_id), tag = "sloth")
 plot_comic <- function(id, tag = NULL, comic_id = NULL, transparent = FALSE) {
-  img <- get_comic(id, tag, comic_id)
+  img <- get_comic(id, tag = tag, comic_id = comic_id,
+                   transparent = transparent)
   # usr <- par()
   graphics::par(mar = c(0, 0, 0, 0) + 0.1)
   graphics::plot(grDevices::as.raster(img))
