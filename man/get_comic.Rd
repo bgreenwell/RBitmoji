@@ -4,7 +4,7 @@
 \alias{get_comic}
 \title{Get Bitmoji comic}
 \usage{
-get_comic(id, tag)
+get_comic(id, tag = NULL, comic_id = NULL)
 }
 \arguments{
 \item{id}{Character string specifying the users unique ID. Can also be a
@@ -12,6 +12,8 @@ vector of length 2.}
 
 \item{tag}{Character string specifying the keyword tag (e.g.,
 \code{"birthday"}).}
+
+\item{comic_id}{Character string specifying the commic id (e.g., \code{"10228108"})}
 }
 \description{
 Get a Bitmoji comic.
