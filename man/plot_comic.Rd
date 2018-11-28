@@ -4,7 +4,7 @@
 \alias{plot_comic}
 \title{Plot Bitmoji comic}
 \usage{
-plot_comic(id, tag = NULL, comic_id = NULL)
+plot_comic(id, tag = NULL, comic_id = NULL, transparent = FALSE)
 }
 \arguments{
 \item{id}{Character string specifying the users unique ID. Can also be a
@@ -13,7 +13,11 @@ vector of length 2.}
 \item{tag}{Character string specifying the keyword tag (e.g.,
 \code{"birthday"}).}
 
-\item{comic_id}{Character string specifying the commic id (e.g., \code{"10228108"})}
+\item{comic_id}{Character string specifying the comic id (e.g.,
+\code{"10228108"}).}
+
+\item{transparent}{Logical indicating whether or not the background should be
+transparent. Default is \code{FALSE} (i.e., the background will be white).}
 }
 \description{
 Plot a Bitmoji comic.
@@ -22,6 +26,7 @@ Plot a Bitmoji comic.
 # ID obtained using get_id()
 my_id <- "1551b314-5e8a-4477-aca2-088c05963111-v1"
 plot_comic(my_id, tag = "edvard")
+plot_comic(my_id, comic_id = "10224100")
 
 # Plot with friends
 plot_comic(c(my_id, my_id), tag = "sloth")

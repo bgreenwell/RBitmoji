@@ -4,7 +4,7 @@
 \alias{get_comic}
 \title{Get Bitmoji comic}
 \usage{
-get_comic(id, tag = NULL, comic_id = NULL)
+get_comic(id, tag = NULL, comic_id = NULL, transparent = FALSE)
 }
 \arguments{
 \item{id}{Character string specifying the users unique ID. Can also be a
@@ -13,7 +13,11 @@ vector of length 2.}
 \item{tag}{Character string specifying the keyword tag (e.g.,
 \code{"birthday"}).}
 
-\item{comic_id}{Character string specifying the commic id (e.g., \code{"10228108"})}
+\item{comic_id}{Character string specifying the comic id (e.g.,
+\code{"10228108"}).}
+
+\item{transparent}{Logical indicating whether or not the background should be
+transparent. Default is \code{FALSE} (i.e., the background will be white).}
 }
 \description{
 Get a Bitmoji comic.
@@ -23,4 +27,5 @@ Get a Bitmoji comic.
 my_id <- "1551b314-5e8a-4477-aca2-088c05963111-v1"
 get_comic(my_id, tag = "edvard")
 get_comic(c(my_id, my_id), tag = "edvard")
+get_comic(my_id, comic_id = "10224100")
 }
